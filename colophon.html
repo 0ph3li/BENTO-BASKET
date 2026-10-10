@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Making of — BENTO &amp; BASKET</title>
+  <meta name="description" content="How Bento &amp; Basket was made: the idea, the moodboard, colour, type, the cutouts and the code behind a fictional Chinatown minimarket.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Dela+Gothic+One&family=Noto+Sans+TC:wght@900&family=Space+Mono:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20261010-7">
+  <link rel="stylesheet" href="css/pages.css?v=20261010-1">
+</head>
+<body class="is-loading" data-page="colophon">
+
+  <!-- ═════════════ WIPE · page transition ═════════════ -->
+  <div class="wipe" id="wipe" aria-hidden="true">
+    <div class="wipe-b"></div>
+    <div class="wipe-a">
+      <p class="wipe-logo"><span class="wl"><span>BENTO</span></span><span class="wl"><span><i>&amp;</i>BASKET</span></span></p>
+      <p class="wipe-sub mono">便當與菜籃 · family minimarket since 1988</p>
+      <p class="wipe-msg mono" id="wipeMsg"></p>
+      <p class="wipe-count" id="wipeCount"></p>
+    </div>
+  </div>
+
+  <!-- ═════════════ HEADER · floating pills ═════════════ -->
+  <header class="hdr" id="hdr">
+    <a class="logo" href="index.html" aria-label="Bento &amp; Basket, home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+      </span>
+      <span class="logo-txt">BENTO<i>&amp;</i>BASKET</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" style="--c:var(--yellow)"><span class="nl"><span>Home</span><span class="zh">入口</span></span></a>
+      <a href="aisles.html" style="--c:var(--red);--t:#fff"><span class="nl"><span>Aisles</span><span class="zh">貨架</span></span></a>
+      <a href="recipes.html" style="--c:var(--orange);--t:#fff"><span class="nl"><span>Recipes</span><span class="zh">食譜</span></span></a>
+      <a href="flyer.html" style="--c:var(--blue);--t:var(--yellow)"><span class="nl"><span>Flyer</span><span class="zh">特價</span></span></a>
+      <a href="story.html" style="--c:var(--pink)"><span class="nl"><span>Our story</span><span class="zh">故事</span></span></a>
+      <a href="visit.html" style="--c:var(--lime)"><span class="nl"><span>Find us</span><span class="zh">地址</span></span></a>
+    </nav>
+
+    <div class="hdr-r">
+      <a class="bskt" href="flyer.html#basket" id="bskt" aria-label="Your basket">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+        <b id="bsktCount">0</b>
+      </a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"><span>Menu</span><i aria-hidden="true"></i></button>
+    </div>
+  </header>
+
+  <!-- ═════════════ MENU · phones and tablets ═════════════ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu-list" aria-label="Menu">
+      <a href="index.html"><i>01</i><b>Home</b><span class="zh">入口</span></a>
+      <a href="aisles.html"><i>02</i><b>Aisles</b><span class="zh">貨架</span></a>
+      <a href="recipes.html"><i>03</i><b>Recipes</b><span class="zh">食譜</span></a>
+      <a href="flyer.html"><i>04</i><b>Flyer</b><span class="zh">特價</span></a>
+      <a href="story.html"><i>05</i><b>Our story</b><span class="zh">故事</span></a>
+      <a href="visit.html"><i>06</i><b>Find us</b><span class="zh">地址</span></a>
+    </nav>
+    <div class="menu-foot mono"><span>88 Lantern Ln · Chinatown, NYC</span><span class="js-today">today: …</span><span>☎ (212) 555-0188</span></div>
+  </div>
+
+  <main>
+
+    <!-- ═════════════ COVER ═════════════ -->
+    <section class="co-h" id="top">
+      <p class="kicker mono">製作 · the making of</p>
+      <h1 class="co-title"><span>Making</span> <span>of</span></h1>
+      <p class="co-lede">Bento &amp; Basket is a <b>fictional</b> family minimarket in New York's Chinatown. Auntie Mei, Uncle Bao and Mochi the cat don't exist, but every aisle, recipe card and receipt here was designed and coded as if they did.</p>
+      <dl class="co-stats" id="coStats"><!-- js/colophon.js --></dl>
+    </section>
+
+    <!-- ═════════════ THE IDEA ═════════════ -->
+    <section class="co-sec co-idea">
+      <h2 class="co-h2"><i class="mono">01</i>The idea</h2>
+      <div class="co-cols">
+        <p>Asian supermarket flyers are loud on purpose: starbursts, prices in giant red numbers, three alphabets on one page, a grandma giving a thumbs up. Nobody designs a website like that, so I tried.</p>
+        <p>The rule was simple: every page is a different object you'd find in the shop. The home is a poster, the aisles are a newspaper ad and a store map, the recipes are index cards in a tin, the flyer is a flyer, the story is a photo album, and the visit page is the shop front itself.</p>
+      </div>
+    </section>
+
+    <!-- ═════════════ MOODBOARD ═════════════ -->
+    <section class="co-sec co-mood">
+      <h2 class="co-h2"><i class="mono">02</i>Moodboard</h2>
+      <p class="co-note mono">references collected before a single line of code. not my images.</p>
+      <div class="mood" id="mood"><!-- js/colophon.js --></div>
+    </section>
+
+    <!-- ═════════════ COLOUR ═════════════ -->
+    <section class="co-sec co-pal">
+      <h2 class="co-h2"><i class="mono">03</i>Colour</h2>
+      <p class="co-note mono">flat poster colours, no gradients except the sky. tap a swatch to copy it.</p>
+      <div class="pal" id="pal"><!-- js/colophon.js --></div>
+    </section>
+
+    <!-- ═════════════ TYPE ═════════════ -->
+    <section class="co-sec co-type">
+      <h2 class="co-h2"><i class="mono">04</i>Type</h2>
+      <div class="types" id="types"><!-- js/colophon.js --></div>
+    </section>
+
+    <!-- ═════════════ PAGES ═════════════ -->
+    <section class="co-sec co-pages">
+      <h2 class="co-h2"><i class="mono">05</i>Six pages, six objects</h2>
+      <div class="pages" id="pages"><!-- js/colophon.js --></div>
+    </section>
+
+    <!-- ═════════════ CUTOUTS ═════════════ -->
+    <section class="co-sec co-cut">
+      <h2 class="co-h2"><i class="mono">06</i>Every sticker is a cutout</h2>
+      <div class="co-cols">
+        <div>
+          <p>About 80 product, dish and story photos were cut out with a small Python script: it floods the background from the edges, softens the mask and crops to the object. Round plates on busy tablecloths got an ellipse mask instead. CSS adds the white die-cut outline, so every product looks like a sticker.</p>
+          <p>Then everything was converted to WebP: <b>51 MB of PNGs became 6 MB.</b></p>
+        </div>
+        <figure class="ba" id="ba">
+          <img src="img/COLOPHON/garlic-before.webp" alt="Garlic photo with a fake transparency checkerboard behind it">
+          <div class="ba-after"><img src="img/COLOPHON/garlic-after.webp" alt="The same garlic, cut out"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the photo before and after the cutout">
+          <span class="ba-l mono">before</span><span class="ba-r mono">after</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═════════════ UNDER THE HOOD ═════════════ -->
+    <section class="co-sec co-tech">
+      <h2 class="co-h2"><i class="mono">07</i>Under the hood</h2>
+      <ul class="tech">
+        <li><b>HTML, CSS, vanilla JavaScript.</b> No framework, no build step: open the folder and it runs.</li>
+        <li><b>GSAP + ScrollTrigger</b> for the motion: the pinned album, the falling SALE letters, the receipt that prints line by line.</li>
+        <li><b>Lenis</b> for smooth scrolling.</li>
+        <li><b>One catalog</b> (<code>js/catalog.js</code>) drives the aisles, the flyer, the basket drawer and the receipt, so a price changes in one place.</li>
+        <li><b>New York time</b> drives the opening hours, the door sign, the clock, the countdown and the after-hours lights, wherever you read from.</li>
+        <li><b>Web Audio</b> for the bell, the kitchen timers and the karaoke song, synthesised, no audio files.</li>
+        <li><b>localStorage</b> remembers your basket, clipped coupons and notes on the cork board. Nothing leaves your browser.</li>
+      </ul>
+    </section>
+
+    <!-- ═════════════ ACCESSIBILITY ═════════════ -->
+    <section class="co-sec co-a11y">
+      <h2 class="co-h2"><i class="mono">08</i>For everyone</h2>
+      <ul class="tech">
+        <li>A skip link, visible focus rings and keyboard access to every button, card, timer and drawer.</li>
+        <li><code>prefers-reduced-motion</code> turns off smooth scroll and the big animations; the content is all there without them.</li>
+        <li>Dialogs (recipe cards, basket, karaoke) trap focus, close with Esc and give focus back.</li>
+        <li>Decorative Chinese characters are hidden from screen readers; real content is labelled in English.</li>
+      </ul>
+    </section>
+
+    <!-- ═════════════ SECRETS ═════════════ -->
+    <section class="co-sec co-eggs">
+      <h2 class="co-h2"><i class="mono">09</i>Secrets</h2>
+      <p class="co-note mono">spoilers. open at your own risk.</p>
+      <div class="eggs">
+        <details><summary>Mochi</summary><p>She is asleep somewhere on every page, in a different spot each visit. Click her.</p></details>
+        <details><summary>The lights</summary><p>When the shop is closed in New York, the whole site goes after hours. The button in the header forces day or night.</p></details>
+        <details><summary>The bell</summary><p>On the Find us page, ring the door. Mei answers differently in the morning, at lunch, at night and on Tuesdays.</p></details>
+        <details><summary>Karaoke</summary><p>Type <kbd>karaoke</kbd> anywhere, press the neon sign in the album, or visit on a Thursday night after closing. Bao wrote the song.</p></details>
+        <details><summary>The timers</summary><p>Every step with a time in a recipe card is a real kitchen timer. It dings.</p></details>
+      </div>
+      <button class="btn btn--ink co-sing" type="button" data-karaoke>Try the karaoke <i aria-hidden="true">🎤</i></button>
+    </section>
+
+    <!-- ═════════════ CREDITS ═════════════ -->
+    <section class="co-end">
+      <p class="co-end-big">Concept, design<br>&amp; code by</p>
+      <p class="co-sig script">ghostly.grl ♥</p>
+      <p class="co-end-s mono">a fictional shop for a portfolio · not for sale · © 2026<br>photos: stock images and references, used for a non-commercial study · fonts: Google Fonts · motion: GSAP, Lenis</p>
+    </section>
+
+  </main>
+
+  <!-- ═════════════ FOOTER ═════════════ -->
+  <footer class="ftr">
+    <div class="ftr-marq" aria-hidden="true"><div class="ftr-track"><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span></div></div>
+    <div class="ftr-grid">
+      <div>
+        <p class="ftr-logo">BENTO<i>&amp;</i>BASKET</p>
+        <p class="ftr-small">A family minimarket since 1988.<br>No app. No loyalty card. Mei remembers your face.</p>
+      </div>
+      <nav class="ftr-nav" aria-label="Footer">
+        <a href="index.html">Home</a><a href="aisles.html">Aisles</a><a href="recipes.html">Recipes</a><a href="flyer.html">Flyer</a><a href="story.html">Our story</a><a href="visit.html">Find us</a><a href="colophon.html">Making of</a>
+      </nav>
+      <div class="ftr-sign">
+        <p class="mono">concept, design &amp; code</p>
+        <p class="script">ghostly.grl ♥</p>
+        <p class="mono ftr-tiny">a fictional shop · © 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/colophon.js?v=20261010-1"></script>
+  <script src="js/catalog.js?v=20261010-2"></script>
+  <script src="js/main.js?v=20261010-5"></script>
+  <script src="js/shop.js?v=20261010-6"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

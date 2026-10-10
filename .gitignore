@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# local tooling
+.claude/
+
+# the first draft of the reel (the real one lives with the others, 60 MB is too big for the repo)
+reel/

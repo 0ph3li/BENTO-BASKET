@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BENTO &amp; BASKET — Auntie Mei recommends</title>
+  <meta name="description" content="A tiny Asian minimarket in New York's Chinatown, run since 1988 by Auntie Mei and Uncle Bao. Snacks from home, noodles by the crate, and a beef noodle soup worth crossing town for.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Dela+Gothic+One&family=Noto+Sans+TC:wght@900&family=Space+Mono:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20261010-7">
+  <link rel="stylesheet" href="css/home.css?v=20261010-2">
+</head>
+<body class="is-loading" data-page="home">
+
+  <!-- ═════════════ WIPE · loader on the home, page transition everywhere ═════════════ -->
+  <div class="wipe" id="wipe" aria-hidden="true">
+    <div class="wipe-b"></div>
+    <div class="wipe-a">
+      <p class="wipe-logo"><span class="wl"><span>BENTO</span></span><span class="wl"><span><i>&amp;</i>BASKET</span></span></p>
+      <p class="wipe-sub mono">便當與菜籃 · family minimarket since 1988</p>
+      <p class="wipe-msg mono" id="wipeMsg">stocking the shelves</p>
+      <p class="wipe-count" id="wipeCount">000</p>
+    </div>
+  </div>
+
+  <!-- ═════════════ HEADER · floating pills ═════════════ -->
+  <header class="hdr" id="hdr">
+    <a class="logo" href="index.html" aria-label="Bento &amp; Basket, home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+      </span>
+      <span class="logo-txt">BENTO<i>&amp;</i>BASKET</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a class="is-here" href="index.html" style="--c:var(--yellow)"><span class="nl"><span>Home</span><span class="zh">入口</span></span></a>
+      <a href="aisles.html" style="--c:var(--red);--t:#fff"><span class="nl"><span>Aisles</span><span class="zh">貨架</span></span></a>
+      <a href="recipes.html" style="--c:var(--orange);--t:#fff"><span class="nl"><span>Recipes</span><span class="zh">食譜</span></span></a>
+      <a href="flyer.html" style="--c:var(--blue);--t:var(--yellow)"><span class="nl"><span>Flyer</span><span class="zh">特價</span></span></a>
+      <a href="story.html" style="--c:var(--pink)"><span class="nl"><span>Our story</span><span class="zh">故事</span></span></a>
+      <a href="visit.html" style="--c:var(--lime)"><span class="nl"><span>Find us</span><span class="zh">地址</span></span></a>
+    </nav>
+
+    <div class="hdr-r">
+      <a class="bskt" href="flyer.html#basket" id="bskt" aria-label="Your basket">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+        <b id="bsktCount">0</b>
+      </a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"><span>Menu</span><i aria-hidden="true"></i></button>
+    </div>
+  </header>
+
+  <!-- ═════════════ MENU · phones and tablets ═════════════ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu-list" aria-label="Menu">
+      <a href="index.html"><i>01</i><b>Home</b><span class="zh">入口</span></a>
+      <a href="aisles.html"><i>02</i><b>Aisles</b><span class="zh">貨架</span></a>
+      <a href="recipes.html"><i>03</i><b>Recipes</b><span class="zh">食譜</span></a>
+      <a href="flyer.html"><i>04</i><b>Flyer</b><span class="zh">特價</span></a>
+      <a href="story.html"><i>05</i><b>Our story</b><span class="zh">故事</span></a>
+      <a href="visit.html"><i>06</i><b>Find us</b><span class="zh">地址</span></a>
+    </nav>
+    <div class="menu-foot mono"><span>88 Lantern Ln · Chinatown, NYC</span><span class="js-today">today: …</span><span>☎ (212) 555-0188</span></div>
+  </div>
+
+  <main>
+
+    <!-- ═════════════ 01 · HERO · the poster ═════════════ -->
+    <section class="hero" id="hero">
+      <div class="dots" aria-hidden="true"></div>
+
+      <p class="hero-meta mono"><span>BEST SNACKS IN CHINATOWN, NYC ▸▸</span><span class="zh">便當與菜籃</span><span>▸▸ OPEN DAILY* (*NOT TUE)</span></p>
+
+      <h1 class="hero-title" aria-label="Bento and Basket">
+        <span class="ht ht--a" data-depth="-12"><span class="ht-in">BENTO</span></span>
+        <span class="ht ht--b" data-depth="14"><span class="ht-in"><i>&amp;</i>BASKET</span></span>
+      </h1>
+
+      <div class="hero-basket" id="heroBasket">
+        <svg class="basket" id="basketSvg" viewBox="0 0 600 470" aria-hidden="true"></svg>
+        <div class="hb-items" id="hbItems">
+          <figure class="hb-item slot cut" style="--x:25%;--y:32%;--r:-12deg;--w:38%" data-img="img/HOME/instant-noodles.webp" data-alt="Instant noodle pack"><span class="ph"><b>instant<br>noodles</b></span></figure>
+          <figure class="hb-item slot cut" style="--x:57%;--y:28%;--r:9deg;--w:30%" data-img="img/HOME/ramune.webp" data-alt="Ramune soda bottle"><span class="ph"><b>ramune</b></span></figure>
+          <figure class="hb-item slot cut" style="--x:80%;--y:44%;--r:16deg;--w:30%" data-img="img/HOME/pocky.webp" data-alt="Strawberry sticks box"><span class="ph"><b>pocky</b></span></figure>
+          <figure class="hb-item slot cut" style="--x:45%;--y:63%;--r:-6deg;--w:34%" data-img="img/HOME/onigiri.webp" data-alt="Onigiri"><span class="ph"><b>onigiri</b></span></figure>
+          <figure class="hb-item slot cut" style="--x:72%;--y:74%;--r:-14deg;--w:28%" data-img="img/HOME/chili-crisp.webp" data-alt="Chili crisp jar"><span class="ph"><b>chili<br>crisp</b></span></figure>
+          <figure class="hb-item slot cut" style="--x:17%;--y:70%;--r:10deg;--w:24%" data-img="img/HOME/yakult.webp" data-alt="Yogurt drink"><span class="ph"><b>yakult</b></span></figure>
+        </div>
+        <span class="ptag" style="--x:4%;--y:14%;--r:-10deg">$1.<sup>99</sup></span>
+        <span class="ptag ptag--b" style="--x:90%;--y:10%;--r:8deg">$0.<sup>89</sup></span>
+      </div>
+
+      <div class="burst burst--since" data-depth="26" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><polygon class="burst-shape" points=""/></svg>
+        <span>SINCE<b>1988</b></span>
+      </div>
+
+      <div class="auntie" data-depth="18">
+        <figure class="auntie-pic slot cut" data-img="img/HOME/auntie-mei-cut.webp" data-alt="Auntie Mei waving"><span class="ph"><b>auntie<br>mei</b><i>HOME/auntie-mei.png</i></span></figure>
+        <p class="auntie-say script">Auntie Mei<br>recommends!</p>
+        <p class="auntie-zh zh" aria-hidden="true">梅婆婆推薦</p>
+      </div>
+
+      <p class="hero-copy">Two grandparents, one tiny shop, <b>four thousand snacks</b> you missed from home.</p>
+
+      <p class="hero-hint mono" id="heroHint"><span aria-hidden="true">✋</span> drag the snacks out of the basket</p>
+      <button class="hero-reset mono" id="heroReset" type="button">↺ put them back, Mei is watching</button>
+    </section>
+
+    <!-- ═════════════ TICKER ═════════════ -->
+    <div class="ticker" aria-label="Today's prices">
+      <div class="ticker-track">
+        <span>SHRIMP CHIPS <b>$2.49</b></span><span>RAMUNE <b>$1.99</b></span><span>PORK BUNS 6PK <b>$5.90</b></span><span>OOLONG 2L <b>$3.20</b></span><span>WHITE RABBIT <b>$2.80</b></span><span>AUNTIE'S KIMCHI <b>$6.50</b></span><span>EXTRA FIRM TOFU <b>$2.20</b></span><span>RICE 10KG <b>$18.90</b></span>
+      </div>
+    </div>
+
+    <!-- ═════════════ 02 · THE HOUSE SPECIAL · ingredients → bowl → dish ═════════════ -->
+    <section class="special" id="special">
+      <div class="sp-stage" id="spStage">
+        <div class="sp-bgtype" aria-hidden="true">
+          <p class="bt bt--1"><span>牛肉麵 BEEF NOODLE 牛肉麵 BEEF NOODLE 牛肉麵 BEEF NOODLE</span></p>
+          <p class="bt bt--2"><span>SLURP SLURP SLURP SLURP SLURP SLURP SLURP SLURP SLURP</span></p>
+          <p class="bt bt--3"><span>紅燒 SOUP 紅燒 SOUP 紅燒 SOUP 紅燒 SOUP 紅燒 SOUP 紅燒 SOUP</span></p>
+        </div>
+
+        <header class="sp-head">
+          <p class="sp-kicker mono"><span class="sp-step" id="spStep">STEP 01</span><span id="spStepTxt">grab the goods</span></p>
+          <h2 class="sp-title"><span>Uncle Bao's</span><b>Beef Noodle Soup</b></h2>
+          <p class="sp-count mono" aria-live="polite"><b id="spCount">0</b>/<span id="spTotal">8</span> in the bowl</p>
+        </header>
+
+        <div class="sp-ings" id="spIngs"><!-- built in js/home.js --></div>
+
+        <div class="bowl" id="bowl" aria-hidden="true">
+          <svg class="bowl-back" viewBox="30 92 302 200">
+            <defs>
+              <clipPath id="bowlMouth"><ellipse cx="180.5" cy="138" rx="137" ry="30"/></clipPath>
+              <clipPath id="bowlFront"><path d="M0 136 L33 136 A147.5 33 0 0 0 328 136 L360 136 L360 360 L0 360 Z"/></clipPath>
+            </defs>
+            <image href="img/RECIPE/bowl-recipe.webp" width="360" height="360"/>
+            <g clip-path="url(#bowlMouth)"><ellipse class="broth" id="broth" cx="180.5" cy="162" rx="96" ry="10" fill="#8a3a17"/></g>
+          </svg>
+          <svg class="bowl-front" viewBox="30 92 302 200"><image href="img/RECIPE/bowl-recipe.webp" width="360" height="360" clip-path="url(#bowlFront)"/></svg>
+          <div class="steam"><i></i><i></i><i></i></div>
+          <div class="splash" id="splash"></div>
+        </div>
+
+        <div class="dish" id="dish">
+          <div class="dish-plate slot cut" data-img="img/RECIPE/beef-noodles-soup-cut.webp" data-alt="Bowl of beef noodle soup seen from above">
+            <svg class="dish-art" id="dishArt" viewBox="0 0 400 400" aria-hidden="true"></svg>
+          </div>
+        </div>
+
+        <div class="pop pop--a" aria-hidden="true"><svg viewBox="0 0 200 200"><polygon class="burst-shape" points=""/></svg><span class="zh">開動!</span></div>
+        <div class="pop pop--b" aria-hidden="true"><svg viewBox="0 0 200 200"><polygon class="burst-shape" points=""/></svg><span>SLURP!</span></div>
+
+        <aside class="rcpt" id="rcpt">
+          <p class="rcpt-note script">"less salt than Bao says" — Mei</p>
+          <p class="rcpt-h">UNCLE BAO'S BEEF NOODLE SOUP<span class="zh">紅燒牛肉麵 · serves 4</span></p>
+          <ol class="rcpt-steps">
+            <li>Sear the beef shank till it's brown and loud.</li>
+            <li>Fry ginger, scallion, star anise and the chili bean paste.</li>
+            <li>Add tomato, water and beef. Simmer 2½ hours. Nap optional.</li>
+            <li>Noodles, bok choy, broth on top. Slurp loudly, it's polite.</li>
+          </ol>
+          <p class="rcpt-tot"><span>8 ITEMS · ALL IN AISLE 03</span><b id="rcptTot">$0.00</b></p>
+          <a class="btn btn--red" href="recipes.html">Full recipe <i aria-hidden="true">→</i></a>
+        </aside>
+
+        <button class="sp-replay mono" id="spReplay" type="button">↺ cook it again</button>
+      </div>
+    </section>
+
+    <!-- ═════════════ 03 · WEEKLY FLYER ═════════════ -->
+    <section class="flyer" id="flyer">
+      <div class="fl-top">
+        <h2 class="sale" aria-label="Sale">SALE</h2>
+        <div class="fl-info">
+          <p class="fl-zh zh">感謝祭!!!</p>
+          <p class="fl-sub">This week's flyer: Mei's picks, <b>cheaper than yesterday</b>. Good until Sunday 8 PM or until Bao eats them.</p>
+          <p class="fl-count mono" id="flCount"><span>resets in</span><b>--</b>d <b>--</b>h <b>--</b>m <b>--</b>s</p>
+        </div>
+      </div>
+      <div class="fl-grid">
+        <article class="deal" data-id="napa"><div class="deal-burst"><svg viewBox="0 0 200 200"><polygon class="burst-shape" points=""/></svg></div><figure class="slot cut" data-img="img/FLYER/napa-cabbage.webp" data-alt="Napa cabbage"><span class="ph"><b>napa<br>cabbage</b></span></figure><p class="deal-price"><sup>$</sup>2.49</p><h3>Napa cabbage <span class="zh">白菜</span></h3><button class="deal-add" type="button">+ basket</button></article>
+        <article class="deal" data-id="choysum"><div class="deal-burst"><svg viewBox="0 0 200 200"><polygon class="burst-shape" points=""/></svg></div><figure class="slot cut" data-img="img/FLYER/choy-sum.webp" data-alt="Choy sum"><span class="ph"><b>choy<br>sum</b></span></figure><p class="deal-price"><sup>$</sup>1.99</p><h3>Choy sum <span class="zh">菜心</span></h3><button class="deal-add" type="button">+ basket</button></article>
+        <article class="deal" data-id="dumplings"><div class="deal-burst"><svg viewBox="0 0 200 200"><polygon class="burst-shape" points=""/></svg></div><figure class="slot cut" data-img="img/FLYER/dumpling-cut.webp" data-alt="Tray of six pork dumplings"><span class="ph"><b>dumplings<br>×6</b></span></figure><p class="deal-price"><sup>$</sup>5.90</p><h3>Pork dumplings ×6 <span class="zh">水餃</span></h3><button class="deal-add" type="button">+ basket</button></article>
+        <article class="deal" data-id="mochi"><div class="deal-burst"><svg viewBox="0 0 200 200"><polygon class="burst-shape" points=""/></svg></div><figure class="slot cut" data-img="img/FLYER/mochi-box.webp" data-alt="Box of mochi"><span class="ph"><b>mochi<br>box</b></span></figure><p class="deal-price"><sup>$</sup>4.50</p><h3>Peanut mochi <span class="zh">麻糬</span></h3><button class="deal-add" type="button">+ basket</button></article>
+        <article class="deal" data-id="oolong"><div class="deal-burst"><svg viewBox="0 0 200 200"><polygon class="burst-shape" points=""/></svg></div><figure class="slot cut" data-img="img/FLYER/ooloi.webp" data-alt="Oolong tea tin"><span class="ph"><b>oolong<br>tin</b></span></figure><p class="deal-price"><sup>$</sup>12.90</p><h3>Mountain oolong <span class="zh">烏龍</span></h3><button class="deal-add" type="button">+ basket</button></article>
+        <article class="deal" data-id="tofu"><div class="deal-burst"><svg viewBox="0 0 200 200"><polygon class="burst-shape" points=""/></svg></div><figure class="slot cut" data-img="img/FLYER/tofu-cut.webp" data-alt="Box of extra firm tofu"><span class="ph"><b>tofu</b></span></figure><p class="deal-price"><sup>$</sup>2.20<small>2 for $4</small></p><h3>Extra firm tofu <span class="zh">豆腐</span></h3><button class="deal-add" type="button">+ basket</button></article>
+      </div>
+      <a class="btn btn--yellow fl-cta" href="flyer.html">See the whole flyer <i aria-hidden="true">→</i></a>
+    </section>
+
+    <!-- ═════════════ 04 · AISLES · the newspaper ad ═════════════ -->
+    <section class="aisles" id="aisles">
+      <p class="news-bar mono"><span>17</span><span>13版S</span><b>THE BASKET TIMES</b><span id="newsDate">2026年10月9日</span><span>【全面広告】</span></p>
+      <div class="ai-head">
+        <h2 class="big">Six aisles.<br><span class="red">Zero</span> elbow room.</h2>
+        <p class="ai-copy">Everything is exactly where Mei left it in 1994. Ask, and Bao will walk you there, telling you about his knee on the way.</p>
+      </div>
+      <ul class="ai-list" id="aiList">
+        <li><a href="aisles.html#snacks" style="--c:var(--red);--t:var(--yellow)"><i>A01</i><b>Snacks</b><span class="zh">零食</span><small>pocky · umaibo · senbei</small><em aria-hidden="true">→</em></a></li>
+        <li><a href="aisles.html#noodles" style="--c:var(--yellow);--t:var(--red)"><i>A02</i><b>Noodles &amp; rice</b><span class="zh">麵飯</span><small>by the crate, if you want</small><em aria-hidden="true">→</em></a></li>
+        <li><a href="aisles.html#sauces" style="--c:var(--blue);--t:#fff"><i>A03</i><b>Sauces &amp; spice</b><span class="zh">醬料</span><small>23 kinds of soy. yes.</small><em aria-hidden="true">→</em></a></li>
+        <li><a href="aisles.html#fresh" style="--c:var(--orange);--t:#fff"><i>A04</i><b>Fresh &amp; frozen</b><span class="zh">冷凍</span><small>gyoza · salmon · tempura</small><em aria-hidden="true">→</em></a></li>
+        <li><a href="aisles.html#greens" style="--c:var(--lime);--t:var(--ink)"><i>A05</i><b>Greens</b><span class="zh">青菜</span><small>in at 6am, gone by noon</small><em aria-hidden="true">→</em></a></li>
+        <li><a href="aisles.html#drinks" style="--c:var(--pink);--t:var(--ink)"><i>A06</i><b>Drinks &amp; tea</b><span class="zh">飲料</span><small>ramune · matcha · hojicha</small><em aria-hidden="true">→</em></a></li>
+      </ul>
+      <div class="ai-float" id="aiFloat" aria-hidden="true">
+        <figure class="slot cut" data-img="img/HOME/pocky.webp"><span class="ph"><b>snacks</b></span></figure>
+        <figure class="slot cut" data-img="img/HOME/instant-noodles.webp"><span class="ph"><b>noodles</b></span></figure>
+        <figure class="slot cut" data-img="img/HOME/chili-crisp.webp"><span class="ph"><b>sauces</b></span></figure>
+        <figure class="slot cut" data-img="img/FLYER/dumpling-cut.webp"><span class="ph"><b>frozen</b></span></figure>
+        <figure class="slot cut" data-img="img/FLYER/napa-cabbage.webp"><span class="ph"><b>greens</b></span></figure>
+        <figure class="slot cut" data-img="img/HOME/ramune.webp"><span class="ph"><b>drinks</b></span></figure>
+      </div>
+    </section>
+
+    <!-- ═════════════ 05 · MEET MEI & BAO · after dark ═════════════ -->
+    <section class="owners" id="owners">
+      <p class="neon zh" aria-hidden="true">梅寶商店</p>
+      <div class="ow-photos">
+        <figure class="polaroid pol--a"><div class="slot" data-img="img/HOME/mei-bao-young.jpg" data-alt="Mei and Bao on their wedding day, 1975" data-ratio="4/5"><span class="ph"><b>mei &amp; bao<br>1975</b></span></div><figcaption class="script">our wedding, 1975</figcaption></figure>
+        <figure class="polaroid pol--b"><div class="slot" data-img="img/HOME/mei-bao-old.jpg" data-alt="Mei and Bao behind the counter today" data-ratio="4/5"><span class="ph"><b>mei &amp; bao<br>today</b></span></div><figcaption class="script">still here, still bickering</figcaption></figure>
+        <figure class="polaroid pol--c"><div class="slot" data-img="img/HOME/mochi-cat.jpg" data-alt="Mochi the cat asleep on rice bags" data-ratio="1/1"><span class="ph"><b>mochi<br>the cat</b></span></div><figcaption class="script">head of security</figcaption></figure>
+        <span class="tape t1"></span><span class="tape t2"></span><span class="tape t3"></span>
+      </div>
+      <div class="ow-text">
+        <p class="kicker mono">A05 · 故事 · the owners</p>
+        <h2 class="big">Meet <span class="yellow">Mei</span><br>&amp; <span class="pink">Bao</span>.</h2>
+        <p class="ow-lede">Married 51 years, shopkeepers for 38. Mei does the books, the kimchi and the talking. Bao does the heavy lifting, the soup, and denying he did the heavy lifting.</p>
+        <div class="bubble"><p>"If you don't find it, ask. If we don't have it, we order it. If it takes too long, I'll make it myself."</p><span class="mono">— Auntie Mei, every day</span></div>
+        <ol class="rules">
+          <li><b>01</b>If you look hungry, Mei will feed you.</li>
+          <li><b>02</b>Do not wake up Mochi.</li>
+          <li><b>03</b>Tuesday is fishing day. We are closed. Don't knock.</li>
+          <li><b>04</b>The karaoke machine is not for sale. Stop asking.</li>
+        </ol>
+        <a class="btn btn--yellow" href="story.html">Read our story <i aria-hidden="true">→</i></a>
+      </div>
+    </section>
+
+    <!-- ═════════════ 06 · FIND US ═════════════ -->
+    <section class="visit" id="visit">
+      <div class="vi-type" aria-hidden="true"><span>COME</span><span>IN!</span></div>
+      <div class="vi-receipt">
+        <p class="vr-h">FIND US<span class="zh">地址 · 營業時間</span></p>
+        <p class="vr-addr">88 LANTERN LANE<br>CHINATOWN · NEW YORK, NY 10013<br>NEXT TO THE LAUNDROMAT<br>LOOK FOR THE GREEN SIGN</p>
+        <p class="rc-dash">--------------------------------</p>
+        <ul class="vr-hours" id="vrHours">
+          <li data-d="1"><span>MON</span><b>8:30 AM – 8:30 PM</b></li>
+          <li data-d="2"><span>TUE</span><b>CLOSED · FISHING</b></li>
+          <li data-d="3"><span>WED</span><b>8:30 AM – 8:30 PM</b></li>
+          <li data-d="4"><span>THU</span><b>8:30 AM – 8:30 PM</b></li>
+          <li data-d="5"><span>FRI</span><b>8:30 AM – 9:30 PM</b></li>
+          <li data-d="6"><span>SAT</span><b>8:30 AM – 9:30 PM</b></li>
+          <li data-d="0"><span>SUN</span><b>10 AM – 6 PM</b></li>
+        </ul>
+        <p class="rc-dash">--------------------------------</p>
+        <p class="vr-now"><span>RIGHT NOW</span><b id="vrNow">…</b></p>
+        <div class="rc-bar" aria-hidden="true"></div>
+        <p class="rc-bye">THANK YOU · COME AGAIN ♥</p>
+        <i class="rc-teeth rc-teeth--top"></i><i class="rc-teeth"></i>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═════════════ FOOTER ═════════════ -->
+  <footer class="ftr">
+    <div class="ftr-marq" aria-hidden="true"><div class="ftr-track"><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span></div></div>
+    <div class="ftr-grid">
+      <div>
+        <p class="ftr-logo">BENTO<i>&amp;</i>BASKET</p>
+        <p class="ftr-small">A family minimarket since 1988.<br>No app. No loyalty card. Mei remembers your face.</p>
+      </div>
+      <nav class="ftr-nav" aria-label="Footer">
+        <a href="index.html">Home</a><a href="aisles.html">Aisles</a><a href="recipes.html">Recipes</a><a href="flyer.html">Flyer</a><a href="story.html">Our story</a><a href="visit.html">Find us</a><a href="colophon.html">Making of</a>
+      </nav>
+      <div class="ftr-sign">
+        <p class="mono">concept, design &amp; code</p>
+        <p class="script">ghostly.grl ♥</p>
+        <p class="mono ftr-tiny">a fictional shop · © 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/catalog.js?v=20261010-2"></script>
+  <script src="js/main.js?v=20261010-5"></script>
+  <script src="js/home.js?v=20261010-9"></script>
+  <script src="js/shop.js?v=20261010-6"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

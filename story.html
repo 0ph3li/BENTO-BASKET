@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Story — BENTO &amp; BASKET</title>
+  <meta name="description" content="Mei and Bao married over a bowl of beef noodle soup in 1975 and opened Bento &amp; Basket in New York's Chinatown in 1988. Fifty-one years, one counter, one very sleepy cat.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Dela+Gothic+One&family=Noto+Sans+TC:wght@900&family=Space+Mono:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20261010-7">
+  <link rel="stylesheet" href="css/story.css?v=20261010-9">
+</head>
+<body class="is-loading" data-page="story">
+
+  <!-- ═════════════ WIPE · page transition ═════════════ -->
+  <div class="wipe" id="wipe" aria-hidden="true">
+    <div class="wipe-b"></div>
+    <div class="wipe-a">
+      <p class="wipe-logo"><span class="wl"><span>BENTO</span></span><span class="wl"><span><i>&amp;</i>BASKET</span></span></p>
+      <p class="wipe-sub mono">便當與菜籃 · family minimarket since 1988</p>
+      <p class="wipe-msg mono" id="wipeMsg"></p>
+      <p class="wipe-count" id="wipeCount"></p>
+    </div>
+  </div>
+
+  <!-- ═════════════ HEADER · floating pills ═════════════ -->
+  <header class="hdr" id="hdr">
+    <a class="logo" href="index.html" aria-label="Bento &amp; Basket, home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+      </span>
+      <span class="logo-txt">BENTO<i>&amp;</i>BASKET</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" style="--c:var(--yellow)"><span class="nl"><span>Home</span><span class="zh">入口</span></span></a>
+      <a href="aisles.html" style="--c:var(--red);--t:#fff"><span class="nl"><span>Aisles</span><span class="zh">貨架</span></span></a>
+      <a href="recipes.html" style="--c:var(--orange);--t:#fff"><span class="nl"><span>Recipes</span><span class="zh">食譜</span></span></a>
+      <a href="flyer.html" style="--c:var(--blue);--t:var(--yellow)"><span class="nl"><span>Flyer</span><span class="zh">特價</span></span></a>
+      <a class="is-here" href="story.html" style="--c:var(--pink)"><span class="nl"><span>Our story</span><span class="zh">故事</span></span></a>
+      <a href="visit.html" style="--c:var(--lime)"><span class="nl"><span>Find us</span><span class="zh">地址</span></span></a>
+    </nav>
+
+    <div class="hdr-r">
+      <a class="bskt" href="flyer.html#basket" id="bskt" aria-label="Your basket">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+        <b id="bsktCount">0</b>
+      </a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"><span>Menu</span><i aria-hidden="true"></i></button>
+    </div>
+  </header>
+
+  <!-- ═════════════ MENU · phones and tablets ═════════════ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu-list" aria-label="Menu">
+      <a href="index.html"><i>01</i><b>Home</b><span class="zh">入口</span></a>
+      <a href="aisles.html"><i>02</i><b>Aisles</b><span class="zh">貨架</span></a>
+      <a href="recipes.html"><i>03</i><b>Recipes</b><span class="zh">食譜</span></a>
+      <a href="flyer.html"><i>04</i><b>Flyer</b><span class="zh">特價</span></a>
+      <a href="story.html"><i>05</i><b>Our story</b><span class="zh">故事</span></a>
+      <a href="visit.html"><i>06</i><b>Find us</b><span class="zh">地址</span></a>
+    </nav>
+    <div class="menu-foot mono"><span>88 Lantern Ln · Chinatown, NYC</span><span class="js-today">today: …</span><span>☎ (212) 555-0188</span></div>
+  </div>
+
+  <main>
+
+    <!-- ═════════════ COVER · the album ═════════════ -->
+    <section class="sh" id="top">
+      <div class="sh-txt">
+        <p class="kicker mono">A05 · 故事 · the family album</p>
+        <h1 class="sh-title" aria-label="Fifty-one years, one counter"><span class="sl"><span>Fifty-one</span></span><span class="sl"><span>years,</span></span><span class="sl"><span><em>one</em> counter.</span></span></h1>
+        <p class="sh-copy">Mei and Bao got married over a bowl of beef noodle soup. Thirteen years later they opened a shop so they could eat it every day. <b>This is the album Mei keeps under the till.</b></p>
+        <p class="sh-hint mono"><span aria-hidden="true">↓</span> turn the pages</p>
+      </div>
+      <div class="sh-pics">
+        <figure class="pol pol--young"><div class="slot" data-img="img/HOME/mei-bao-young.jpg" data-alt="Mei and Bao in their wedding clothes, eating noodle soup, 1975" data-ratio="4/5"><span class="ph"><b>1975</b></span></div><figcaption class="script">the wedding lunch, 1975</figcaption></figure>
+        <figure class="pol pol--old"><div class="slot" data-img="img/HOME/mei-bao-old.jpg" data-alt="Mei and Bao today, on a winter trip" data-ratio="4/3"><span class="ph"><b>today</b></span></div><figcaption class="script">51 years later, still bickering</figcaption></figure>
+        <p class="sh-stamp" aria-hidden="true"><span class="zh">梅寶</span><span class="mono">est. 1975</span></p>
+      </div>
+    </section>
+
+    <!-- ═════════════ TIMELINE · one page per year ═════════════ -->
+    <section class="tl" id="timeline" aria-label="Timeline, 1975 to today">
+      <div class="tl-pin">
+        <div class="tl-year" aria-hidden="true"><span class="tl-odo" id="tlOdo"></span><span class="tl-bar"><i id="tlBar"></i></span></div>
+        <div class="tl-track" id="tlTrack"><!-- built in js/story.js --></div>
+      </div>
+    </section>
+
+    <!-- ═════════════ THE CAST · name tags ═════════════ -->
+    <section class="cast" id="cast">
+      <div class="cast-head">
+        <p class="kicker mono">who's who at 88 Lantern Lane</p>
+        <h2 class="cast-title">The cast</h2>
+      </div>
+      <div class="cast-row" id="castRow"><!-- built in js/story.js --></div>
+    </section>
+
+    <!-- ═════════════ GUESTBOOK · the cork board by the door ═════════════ -->
+    <section class="gb" id="guestbook">
+      <div class="gb-head">
+        <p class="kicker mono">the cork board by the door</p>
+        <h2 class="gb-title">Leave Mei<br>a note</h2>
+        <p class="gb-copy">Thirty-eight years of notes, pinned by the door. Mei reads every one, out loud, to Bao. <b>Yours stays on this board, on this device.</b></p>
+        <form class="gb-form" id="gbForm" autocomplete="off">
+          <label class="mono" for="gbText">your note</label>
+          <textarea id="gbText" maxlength="140" rows="3" placeholder="The soup saved my exam week…" required></textarea>
+          <div class="gb-row">
+            <input id="gbName" maxlength="24" placeholder="your name (or 'a regular')" aria-label="Your name">
+            <button class="btn btn--ink" type="submit">Pin it <i aria-hidden="true">📌</i></button>
+          </div>
+        </form>
+      </div>
+      <div class="cork" id="cork"><!-- built in js/story.js --></div>
+    </section>
+
+    <!-- ═════════════ NEXT · come by ═════════════ -->
+    <section class="next">
+      <p class="next-big">The rest of<br>the story is <span>in the shop.</span></p>
+      <p class="next-copy">Come by. Mei will ask if you've eaten. Say no.</p>
+      <a class="btn btn--red" href="visit.html">Find us <i aria-hidden="true">→</i></a>
+    </section>
+
+  </main>
+
+  <!-- ═════════════ FOOTER ═════════════ -->
+  <footer class="ftr">
+    <div class="ftr-marq" aria-hidden="true"><div class="ftr-track"><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span></div></div>
+    <div class="ftr-grid">
+      <div>
+        <p class="ftr-logo">BENTO<i>&amp;</i>BASKET</p>
+        <p class="ftr-small">A family minimarket since 1988.<br>No app. No loyalty card. Mei remembers your face.</p>
+      </div>
+      <nav class="ftr-nav" aria-label="Footer">
+        <a href="index.html">Home</a><a href="aisles.html">Aisles</a><a href="recipes.html">Recipes</a><a href="flyer.html">Flyer</a><a href="story.html">Our story</a><a href="visit.html">Find us</a><a href="colophon.html">Making of</a>
+      </nav>
+      <div class="ftr-sign">
+        <p class="mono">concept, design &amp; code</p>
+        <p class="script">ghostly.grl ♥</p>
+        <p class="mono ftr-tiny">a fictional shop · © 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/story.js?v=20261010-9"></script>
+  <script src="js/catalog.js?v=20261010-2"></script>
+  <script src="js/main.js?v=20261010-5"></script>
+  <script src="js/shop.js?v=20261010-6"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

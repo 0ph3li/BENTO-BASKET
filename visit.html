@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Us — BENTO &amp; BASKET</title>
+  <meta name="description" content="Bento &amp; Basket, 88 Lantern Lane, Chinatown, New York. Four minutes from Canal St station. Open every day except Tuesday, when Bao goes fishing.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Dela+Gothic+One&family=Noto+Sans+TC:wght@900&family=Space+Mono:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20261010-7">
+  <link rel="stylesheet" href="css/visit.css?v=20261010-3">
+</head>
+<body class="is-loading" data-page="visit">
+
+  <!-- ═════════════ WIPE · page transition ═════════════ -->
+  <div class="wipe" id="wipe" aria-hidden="true">
+    <div class="wipe-b"></div>
+    <div class="wipe-a">
+      <p class="wipe-logo"><span class="wl"><span>BENTO</span></span><span class="wl"><span><i>&amp;</i>BASKET</span></span></p>
+      <p class="wipe-sub mono">便當與菜籃 · family minimarket since 1988</p>
+      <p class="wipe-msg mono" id="wipeMsg"></p>
+      <p class="wipe-count" id="wipeCount"></p>
+    </div>
+  </div>
+
+  <!-- ═════════════ HEADER · floating pills ═════════════ -->
+  <header class="hdr" id="hdr">
+    <a class="logo" href="index.html" aria-label="Bento &amp; Basket, home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+      </span>
+      <span class="logo-txt">BENTO<i>&amp;</i>BASKET</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" style="--c:var(--yellow)"><span class="nl"><span>Home</span><span class="zh">入口</span></span></a>
+      <a href="aisles.html" style="--c:var(--red);--t:#fff"><span class="nl"><span>Aisles</span><span class="zh">貨架</span></span></a>
+      <a href="recipes.html" style="--c:var(--orange);--t:#fff"><span class="nl"><span>Recipes</span><span class="zh">食譜</span></span></a>
+      <a href="flyer.html" style="--c:var(--blue);--t:var(--yellow)"><span class="nl"><span>Flyer</span><span class="zh">特價</span></span></a>
+      <a href="story.html" style="--c:var(--pink)"><span class="nl"><span>Our story</span><span class="zh">故事</span></span></a>
+      <a class="is-here" href="visit.html" style="--c:var(--lime)"><span class="nl"><span>Find us</span><span class="zh">地址</span></span></a>
+    </nav>
+
+    <div class="hdr-r">
+      <a class="bskt" href="flyer.html#basket" id="bskt" aria-label="Your basket">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+        <b id="bsktCount">0</b>
+      </a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"><span>Menu</span><i aria-hidden="true"></i></button>
+    </div>
+  </header>
+
+  <!-- ═════════════ MENU · phones and tablets ═════════════ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu-list" aria-label="Menu">
+      <a href="index.html"><i>01</i><b>Home</b><span class="zh">入口</span></a>
+      <a href="aisles.html"><i>02</i><b>Aisles</b><span class="zh">貨架</span></a>
+      <a href="recipes.html"><i>03</i><b>Recipes</b><span class="zh">食譜</span></a>
+      <a href="flyer.html"><i>04</i><b>Flyer</b><span class="zh">特價</span></a>
+      <a href="story.html"><i>05</i><b>Our story</b><span class="zh">故事</span></a>
+      <a href="visit.html"><i>06</i><b>Find us</b><span class="zh">地址</span></a>
+    </nav>
+    <div class="menu-foot mono"><span>88 Lantern Ln · Chinatown, NYC</span><span class="js-today">today: …</span><span>☎ (212) 555-0188</span></div>
+  </div>
+
+  <main>
+
+    <!-- ═════════════ THE SHOP FRONT ═════════════ -->
+    <section class="vh" id="top">
+      <div class="vh-txt">
+        <p class="kicker mono">A06 · 地址 · find us</p>
+        <h1 class="vh-title" aria-label="Come in!"><span class="vl"><span>COME</span></span><span class="vl"><span>IN!</span></span></h1>
+        <address class="vh-addr">
+          <b>88 Lantern Lane</b>
+          <span>Chinatown · New York, NY 10013</span>
+          <span class="mono">between Mott &amp; Elizabeth, just off Canal</span>
+        </address>
+        <p class="vh-now mono"><span class="dot" id="nowDot"></span><b id="nowTxt">…</b><span id="nowClock"></span></p>
+      </div>
+
+      <div class="front" id="front">
+        <div class="fr-sign"><span class="fr-logo">BENTO<i>&amp;</i>BASKET</span><span class="fr-zh zh">便當與菜籃</span></div>
+        <div class="fr-awning" aria-hidden="true"></div>
+        <div class="fr-body">
+          <div class="fr-window" aria-hidden="true">
+            <div class="fr-shelf">
+              <figure class="slot cut" data-img="img/HOME/pocky.webp"></figure>
+              <figure class="slot cut" data-img="img/HOME/ramune.webp"></figure>
+              <figure class="slot cut" data-img="img/HOME/instant-noodles.webp"></figure>
+            </div>
+            <div class="fr-shelf">
+              <figure class="slot cut" data-img="img/HOME/chili-crisp.webp"></figure>
+              <figure class="slot cut" data-img="img/AISLES/cut/white-rabbit.webp"></figure>
+              <figure class="slot cut" data-img="img/AISLES/cut/eggs.webp"></figure>
+            </div>
+            <p class="fr-poster"><b>SALE</b><span class="zh">感謝祭</span></p>
+            <p class="fr-cat" title="Mochi">🐈</p>
+          </div>
+          <div class="fr-door-wrap">
+            <p class="fr-no mono" aria-hidden="true">88</p>
+            <button class="fr-door" id="door" type="button" aria-label="Ring the bell and open the door">
+              <span class="fr-door-in">
+                <span class="fr-glass"></span>
+                <span class="fr-hang" id="hang"><span class="fr-hang-f">OPEN<small class="zh">營業中</small></span><span class="fr-hang-b">CLOSED<small class="zh">休息</small></span></span>
+                <span class="fr-knob"></span>
+              </span>
+            </button>
+            <span class="fr-bell" id="bell" aria-hidden="true">🔔</span>
+          </div>
+        </div>
+        <div class="fr-walk" aria-hidden="true"></div>
+        <p class="fr-bubble" id="bubble" aria-live="polite" hidden></p>
+        <p class="fr-hint mono"><span aria-hidden="true">☝</span> ring the bell</p>
+      </div>
+    </section>
+
+    <!-- ═════════════ THE MAP · drawn by Bao ═════════════ -->
+    <section class="map" id="map">
+      <div class="map-side">
+        <p class="kicker mono">how to get here</p>
+        <h2 class="map-title">Bao's<br>map</h2>
+        <div class="routes" id="routes" role="group" aria-label="Pick a route"><!-- built in js/visit.js --></div>
+        <ol class="steps" id="steps" aria-live="polite"></ol>
+      </div>
+      <div class="map-paper">
+        <svg class="map-svg" id="mapSvg" viewBox="0 0 800 600" role="img" aria-label="Hand-drawn map of Chinatown, with the shop on Lantern Lane between Mott and Elizabeth Street, just south of Canal Street"><!-- drawn in js/visit.js --></svg>
+        <p class="map-note script">not to scale. Bao says it's "roughly right".</p>
+      </div>
+    </section>
+
+    <!-- ═════════════ HOURS ═════════════ -->
+    <section class="hrs" id="hours">
+      <div class="clock-wrap">
+        <svg class="clock" id="clock" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="94" class="clock-face"/>
+          <g id="ticks"></g>
+          <line id="hH" x1="100" y1="100" x2="100" y2="52" class="hand hand--h"/>
+          <line id="hM" x1="100" y1="100" x2="100" y2="30" class="hand hand--m"/>
+          <line id="hS" x1="100" y1="112" x2="100" y2="24" class="hand hand--s"/>
+          <circle cx="100" cy="100" r="6" class="clock-pin"/>
+        </svg>
+        <p class="clock-cap mono">New York time · <b id="clockTxt">--:--</b></p>
+      </div>
+      <div class="hrs-board">
+        <h2 class="hrs-title">Hours <span class="zh">營業時間</span></h2>
+        <ul class="hrs-list" id="hrsList"><!-- built in js/visit.js --></ul>
+        <ul class="hrs-special">
+          <li><b>Lunar New Year</b><span>open, loud, red envelopes for kids</span></li>
+          <li><b>Thanksgiving</b><span>closed. Mei cooks for forty</span></li>
+          <li><b>Snow day</b><span>open if Bao can shovel the step</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═════════════ GOOD TO KNOW ═════════════ -->
+    <section class="know" id="know">
+      <h2 class="know-title">Good to know</h2>
+      <div class="know-grid" id="knowGrid"><!-- built in js/visit.js --></div>
+    </section>
+
+    <!-- ═════════════ BYE ═════════════ -->
+    <section class="bye">
+      <p class="bye-zh zh" aria-hidden="true">再見</p>
+      <p class="bye-big">See you<br><span>soon.</span></p>
+      <p class="bye-copy">Mei will already know your name. Bao will pretend he doesn't.</p>
+      <a class="btn btn--ink" href="index.html">Back to the front door <i aria-hidden="true">→</i></a>
+    </section>
+
+  </main>
+
+  <!-- ═════════════ FOOTER ═════════════ -->
+  <footer class="ftr">
+    <div class="ftr-marq" aria-hidden="true"><div class="ftr-track"><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span></div></div>
+    <div class="ftr-grid">
+      <div>
+        <p class="ftr-logo">BENTO<i>&amp;</i>BASKET</p>
+        <p class="ftr-small">A family minimarket since 1988.<br>No app. No loyalty card. Mei remembers your face.</p>
+      </div>
+      <nav class="ftr-nav" aria-label="Footer">
+        <a href="index.html">Home</a><a href="aisles.html">Aisles</a><a href="recipes.html">Recipes</a><a href="flyer.html">Flyer</a><a href="story.html">Our story</a><a href="visit.html">Find us</a><a href="colophon.html">Making of</a>
+      </nav>
+      <div class="ftr-sign">
+        <p class="mono">concept, design &amp; code</p>
+        <p class="script">ghostly.grl ♥</p>
+        <p class="mono ftr-tiny">a fictional shop · © 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/visit.js?v=20261010-9"></script>
+  <script src="js/catalog.js?v=20261010-2"></script>
+  <script src="js/main.js?v=20261010-5"></script>
+  <script src="js/shop.js?v=20261010-6"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>

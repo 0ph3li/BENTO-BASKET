@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipes — BENTO &amp; BASKET</title>
+  <meta name="description" content="Mei and Bao's recipe box: beef noodle soup, miso salmon, gyoza night and more, written on index cards since 1975. Shop every ingredient in one tap.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Dela+Gothic+One&family=Noto+Sans+TC:wght@900&family=Space+Mono:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20261010-7">
+  <link rel="stylesheet" href="css/recipes.css?v=20261010-4">
+</head>
+<body class="is-loading" data-page="recipes">
+
+  <!-- ═════════════ WIPE · page transition ═════════════ -->
+  <div class="wipe" id="wipe" aria-hidden="true">
+    <div class="wipe-b"></div>
+    <div class="wipe-a">
+      <p class="wipe-logo"><span class="wl"><span>BENTO</span></span><span class="wl"><span><i>&amp;</i>BASKET</span></span></p>
+      <p class="wipe-sub mono">便當與菜籃 · family minimarket since 1988</p>
+      <p class="wipe-msg mono" id="wipeMsg"></p>
+      <p class="wipe-count" id="wipeCount"></p>
+    </div>
+  </div>
+
+  <!-- ═════════════ HEADER · floating pills ═════════════ -->
+  <header class="hdr" id="hdr">
+    <a class="logo" href="index.html" aria-label="Bento &amp; Basket, home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+      </span>
+      <span class="logo-txt">BENTO<i>&amp;</i>BASKET</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" style="--c:var(--yellow)"><span class="nl"><span>Home</span><span class="zh">入口</span></span></a>
+      <a href="aisles.html" style="--c:var(--red);--t:#fff"><span class="nl"><span>Aisles</span><span class="zh">貨架</span></span></a>
+      <a class="is-here" href="recipes.html" style="--c:var(--orange);--t:#fff"><span class="nl"><span>Recipes</span><span class="zh">食譜</span></span></a>
+      <a href="flyer.html" style="--c:var(--blue);--t:var(--yellow)"><span class="nl"><span>Flyer</span><span class="zh">特價</span></span></a>
+      <a href="story.html" style="--c:var(--pink)"><span class="nl"><span>Our story</span><span class="zh">故事</span></span></a>
+      <a href="visit.html" style="--c:var(--lime)"><span class="nl"><span>Find us</span><span class="zh">地址</span></span></a>
+    </nav>
+
+    <div class="hdr-r">
+      <a class="bskt" href="flyer.html#basket" id="bskt" aria-label="Your basket">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 22a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M10 24h44l-5 28a4 4 0 0 1-4 3H19a4 4 0 0 1-4-3z" fill="currentColor"/></svg>
+        <b id="bsktCount">0</b>
+      </a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"><span>Menu</span><i aria-hidden="true"></i></button>
+    </div>
+  </header>
+
+  <!-- ═════════════ MENU · phones and tablets ═════════════ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu-list" aria-label="Menu">
+      <a href="index.html"><i>01</i><b>Home</b><span class="zh">入口</span></a>
+      <a href="aisles.html"><i>02</i><b>Aisles</b><span class="zh">貨架</span></a>
+      <a href="recipes.html"><i>03</i><b>Recipes</b><span class="zh">食譜</span></a>
+      <a href="flyer.html"><i>04</i><b>Flyer</b><span class="zh">特價</span></a>
+      <a href="story.html"><i>05</i><b>Our story</b><span class="zh">故事</span></a>
+      <a href="visit.html"><i>06</i><b>Find us</b><span class="zh">地址</span></a>
+    </nav>
+    <div class="menu-foot mono"><span>88 Lantern Ln · Chinatown, NYC</span><span class="js-today">today: …</span><span>☎ (212) 555-0188</span></div>
+  </div>
+
+  <main>
+
+    <!-- ═════════════ HERO · the recipe tin ═════════════ -->
+    <section class="rh" id="top">
+      <div class="rh-left">
+        <p class="kicker mono">A03 · 食譜 · the recipe box</p>
+        <h1 class="rh-title" aria-label="The recipe box"><span class="rl"><span>THE</span></span><span class="rl"><span>RECIPE</span></span><span class="rl"><span>BOX</span></span></h1>
+        <p class="rh-copy">Written on index cards since 1975. Splattered, corrected in two handwritings, argued over every Sunday. <b>Pick a card.</b></p>
+        <div class="who" role="group" aria-label="Who's cooking tonight?">
+          <p class="who-q mono">who's cooking tonight?</p>
+          <button class="who-btn who-btn--mei" type="button" data-f="mei">Mei <span class="zh">梅</span></button>
+          <button class="who-btn who-btn--bao" type="button" data-f="bao">Bao <span class="zh">寶</span></button>
+        </div>
+      </div>
+      <div class="tin" id="tin">
+        <div class="tin-cards" id="tinCards"><!-- built in js/recipes.js --></div>
+        <div class="tin-front" aria-hidden="true">
+          <span class="tin-label"><b>RECIPES</b><span class="zh">食譜</span><small>Mei &amp; Bao · keep out</small></span>
+        </div>
+        <p class="tin-hint mono">pull a card</p>
+      </div>
+    </section>
+
+    <!-- ═════════════ FILTERS + CARDS ═════════════ -->
+    <section class="cards" id="cards">
+      <div class="filters" id="filters" role="group" aria-label="Filter recipes">
+        <button type="button" data-f="all" class="is-on">All</button>
+        <button type="button" data-f="mei">By Mei</button>
+        <button type="button" data-f="bao">By Bao</button>
+        <button type="button" data-f="quick">Under 15 min</button>
+        <button type="button" data-f="spicy">Spicy</button>
+        <button type="button" data-f="veggie">Veggie</button>
+        <button type="button" data-f="sweet">Sweet</button>
+      </div>
+      <p class="cards-count mono" id="cardsCount" aria-live="polite"></p>
+      <div class="grid" id="grid"><!-- built in js/recipes.js --></div>
+    </section>
+
+    <!-- ═════════════ SUNDAY ═════════════ -->
+    <section class="sunday">
+      <p class="sun-big">Every Sunday,<br><span>a new card.</span></p>
+      <p class="sun-copy">Mei tests it on Bao, Bao tests it on the neighbours, the neighbours ask for seconds. Then it goes in the box.</p>
+      <a class="btn btn--ink" href="aisles.html">Shop the aisles <i aria-hidden="true">→</i></a>
+    </section>
+
+  </main>
+
+  <!-- ═════════════ RECIPE CARD · opens over the page ═════════════ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+    <div class="modal-bg" data-close></div>
+    <div class="mwrap">
+      <article class="mcard" id="mcard"></article>
+      <figure class="mdish slot cut" id="mdish"></figure>
+    </div>
+  </div>
+
+  <!-- ═════════════ FOOTER ═════════════ -->
+  <footer class="ftr">
+    <div class="ftr-marq" aria-hidden="true"><div class="ftr-track"><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span><span>THANK YOU · COME AGAIN ·</span><span class="zh">謝謝光臨 ·</span></div></div>
+    <div class="ftr-grid">
+      <div>
+        <p class="ftr-logo">BENTO<i>&amp;</i>BASKET</p>
+        <p class="ftr-small">A family minimarket since 1988.<br>No app. No loyalty card. Mei remembers your face.</p>
+      </div>
+      <nav class="ftr-nav" aria-label="Footer">
+        <a href="index.html">Home</a><a href="aisles.html">Aisles</a><a href="recipes.html">Recipes</a><a href="flyer.html">Flyer</a><a href="story.html">Our story</a><a href="visit.html">Find us</a><a href="colophon.html">Making of</a>
+      </nav>
+      <div class="ftr-sign">
+        <p class="mono">concept, design &amp; code</p>
+        <p class="script">ghostly.grl ♥</p>
+        <p class="mono ftr-tiny">a fictional shop · © 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/recipes.js?v=20261010-10"></script>
+  <script src="js/catalog.js?v=20261010-2"></script>
+  <script src="js/main.js?v=20261010-5"></script>
+  <script src="js/shop.js?v=20261010-6"></script>
+</body>
+  <!--
+   *    /\_/\      +
+       ( o.o )   <3  ghostly.grl
+   +    > ^ <          *
+-->
+</html>
